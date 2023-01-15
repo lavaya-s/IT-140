@@ -1,6 +1,5 @@
 '''Movement Between Rooms'''
-#Alexandria Palm
-#Ben Payeur
+
 #IT-140
 #
 #
