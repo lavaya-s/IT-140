@@ -1,2 +1,2 @@
 # IT-140
- Python course for school
+ A collection of assignments for SNHU IT-140
