@@ -37,3 +37,5 @@ if coins !=0:#this checks to see if there are any coins left after taking out th
         print(coins,'Penny')
     elif coins >1:
         print(coins,'Pennies')
+#use a dict and iterate over it instead 
+#cointainerizing is more effective than a ton of if statements. 
