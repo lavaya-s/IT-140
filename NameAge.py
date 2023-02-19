@@ -19,3 +19,4 @@ def NameAge():
 #sample output:
 #Hello Amanda! You were born in 2005.
     print(f'Hello {user_name}! You were born in {year_born}.')
+NameAge()

@@ -20,8 +20,6 @@ def MadLib(num,noun):#takes args for numbers and nouns
     #format to put user input into the string
     if noun != 'quit':#doesn't print the quit statement
         print(f'Eating {num} {noun} a day keeps the doctor away.')
-        print(num)
-        print(noun)
 while game == True:
     UserText()
     count += 1#count after so no index out of range error
