@@ -2,7 +2,7 @@
 values = []#create empty list to store data
 value = input().split()#take input from user
 #iterate over user input to store into the empty list
-for v in value:
+for v in value:#iterate over the string
     if v != ' ':#ignore spaces
         values.append(int(v))#add the values to the list      
 def insertion_sort(array):

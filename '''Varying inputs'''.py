@@ -2,8 +2,8 @@ def ints(args):#define a function to accept any number of arguments
     global max_int,average#set the max_int and average variable to global so it can be accessed later
     max_int=0#set it to zero
     average=0#set the average to zero
-    count=0
-    numbers = []
+    count=0#set the count to zero
+    numbers = []#create empty list
     for arg in args:
         numbers.append(arg)
     for arg in numbers:

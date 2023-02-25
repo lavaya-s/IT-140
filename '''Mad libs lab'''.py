@@ -1,6 +1,4 @@
-#
 ####################################################################
-
 words = {}#create dictionaries to hold the keys to inputs
 numbers={}
 game = True#bool flag for the while loop
@@ -28,5 +26,4 @@ for element in range(count):#this runs for each time the input was taken
     num = numbers[element]#uses the value from each key in order of count variable
     noun = words[element]
     MadLib(num, noun)#passes the arguments to the print function
-
 ################################################################################

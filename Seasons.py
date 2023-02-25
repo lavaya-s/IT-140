@@ -3,7 +3,6 @@ def Seasons():
 
     input_month = input('Please input the month').lower().strip()
     input_day = int(input('Please input the day'))
-
     months=['january','february', 'april', 'may', 'march', 'june', 'july', 'august', 'september', 'november', 'october', 'december']
     if input_month not in months or input_day >31  or input_day<=0:
         print('Invalid')
