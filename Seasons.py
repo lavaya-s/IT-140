@@ -1,6 +1,4 @@
-
 def Seasons():
-
     input_month = input('Please input the month').lower().strip()
     input_day = int(input('Please input the day'))
     months=['january','february', 'april', 'may', 'march', 'june', 'july', 'august', 'september', 'november', 'october', 'december']
