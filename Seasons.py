@@ -36,4 +36,3 @@ def Seasons():
             print('Autumn')
         if input_day >=21 and input_day <31:
             print('Winter')  
-Seasons()

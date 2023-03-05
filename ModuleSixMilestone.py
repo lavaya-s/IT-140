@@ -25,4 +25,3 @@ while current_room != 'exit':#exit will exit the program
         current_room='exit'#this breaks the while condition
     else:
         print('Please enter a valid Command!')#loops back around after informing the player
-
