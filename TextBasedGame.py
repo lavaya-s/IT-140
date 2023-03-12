@@ -171,20 +171,17 @@ def Scene():#sets the scene for each room
         text('3 jagged corridors cracked into the rock in front of you, you consult your trusty compass,\n')
         text('they go in the cardinal directions, East, North, and West.\n')
         text('There is a glimmer of something on the ceiling above.\n South is the direction you came from.\n')
-        
     if current_room == 'Skeletons':
         text('In this cramped, dusty space you see skeletons of old warriors.\n')
         text('dusty bones and dilapidated shields.\n')
         text('The air in this room has a sense of dread and despair.\n')
         if 'Lock pick' not in inventory and lockpick == True:
             text('You notice a small satchel that one of the skeletons is clutching\n')
-
     if current_room == 'Library':
         text('As you enter this room you see it is the ruins of an old library,\n')
         text('carved into the cavern eons ago. shelving is rotten and the books are all crumbled.\n')
         if 'Spell scroll' not in inventory:
             text('You see a peice of paper encased in glass with a cork on the top.\n')
-
     if current_room == 'Hall':
         text('This long corridor grows dark and unsettling opening up after a while,\n')
         text('before forking into two doorways. both doors are closed and made of stone.\n')
@@ -273,7 +270,6 @@ def Grab():#This is to grab items
         text('southeast of the mining town of phandlalin.\n')
         text('"These are harmless" you utter as you grab one and stuff it in your satchel\n')
         PlayerAction()
-
     if current_room == 'Library' and 'Spell scroll' not in inventory:
         text('You reach out and grab the bottle.\n')
         print('OOPS!')
@@ -283,7 +279,6 @@ def Grab():#This is to grab items
         text('\tThe golden statue of Tymora\n\t1 voodoo doll\n\t and this very spell scroll\n\t\n')
         inventory.append('Spell scroll')
         PlayerAction()
-    
     if current_room == 'Chest' and 'Golden statuette' not in inventory:
         text('You try to pry open the treasure chest but all your efforts are futile!\n')
         PlayerAction()
@@ -295,7 +290,6 @@ def Grab():#This is to grab items
     if current_room == 'Puzzle' and 'Skull key' not in inventory:
         text('you bend over and grab the object you nearly tripped over.\n')
         inventory.append('Skull key')
-    
     else:
         text('There is nothing here to grab\n')
         PlayerAction()
@@ -391,4 +385,3 @@ while Game == True:
     Load()#load global assets
     intro()#introduction to the game
     Main()#main game loop with exit condition
-
