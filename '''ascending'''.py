@@ -5,9 +5,9 @@ value = input().split()#take input from user
 for v in value:#iterate over the string
     if v != ' ':#ignore spaces
         values.append(int(v))#add the values to the list      
-def insertion_sort(array):
-    for index in range(1,len(array)):
-        value=array[index]
+def insertion_sort(array):#takes an array as argument
+    for index in range(1,len(array)):#check the length of the array and create a range for indexing
+        value=array[index]#initialize the variable to the current index on the array
         while array[index-1]>value and index>=1:
             array[index]=array[index-1]
             index-=1
