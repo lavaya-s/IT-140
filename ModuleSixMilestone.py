@@ -2,7 +2,7 @@
 #IT-140
 #A dictionary for the simplified dragon text game
 #The dictionary links a room to other rooms.
-rooms = {
+rooms = {#nested dictionaries
         'Great Hall': {'South': 'Bedroom'},
         'Bedroom': {'North': 'Great Hall', 'East': 'Cellar'},
         'Cellar': {'West': 'Bedroom'}
