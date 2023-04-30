@@ -15,4 +15,6 @@ def NameAge():
     year_born = year - user_age
     year_born = str(year_born).strip()#strip any whitespace entered by the user
     print(f'Hello {user_name}! You were born in {year_born}.')
-NameAge()
+loop='no' if input('Can I guess your age?').strip().lower() == ('no')else 0
+while loop!='no':
+    NameAge()
