@@ -36,8 +36,8 @@ def text(string):#creates scrolling text for the game
         time.sleep(0.04)#Prints with a time delay so the text scrolls
 def PlayerAction():#this function is the default screen for the game where the player chooses which function to go to next
     global Game
-    text('What would you like to do?\n\t')
-    action=input('\t([i]- inspect, [m]-move, [g]-grab,[c]-check inventory, [e]exit game): ').title().strip()
+    text('What would you like to do?\n\t')#use tab and newline characters for formatting
+    action=input('\t([i]- inspect, [m]-move, [g]-grab,[c]-check inventory, [e]exit game): ').title().strip()#uses title case and strips whitespace
     try:#this is if the player accidentaly presses enter
         if action[0] == 'I':#accesses only the first letter in title case in case of misspelled words. 
             Inspect()
@@ -48,7 +48,7 @@ def PlayerAction():#this function is the default screen for the game where the p
         if action[0] == 'C':
             Checkinventory()
         if action[0] == 'E':
-            end()
+            end()#runs the endgame function
         else:
             PlayerAction()#invalid options loop back
     except IndexError:
