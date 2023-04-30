@@ -1,17 +1,17 @@
 '''Text based adventure game'''
 #IT-140 SNHU
-#A
+#
 #import dependencies
-import sys
+import sys#breaks the game loop for recursion issues
 from random import randint#random for dice rolls
 import time#time import for scrolling
 Game=True#this is for the while condition to run the game
-lockpick=True
+lockpick=True#this is for the existence of the lockppick
 Villian_room=False#this becomes true if the player solves the puzzle//unlocking area Villian_room vilian room
 Writing=False#boolean flag for locked rooms
-Drawing=False
+Drawing=False#another locked room
 def Load():# made this to load game assets at the beggining but am considering eliomniting this function
-    global rooms,current_room,inventory
+    global rooms,current_room,inventory#set global values
     rooms = {#player input only takes first letter of direction
             'Entrance': {'N': 'Stalagmite'},#set all cardinal directions to single letters
             'Stalagmite': {'N': 'Hall', 'E': 'Skeletons','W':'Library','S':'Entrance'},
