@@ -1,6 +1,6 @@
-#Write a program with total change amount as an integer input, and output the change using the fewest coins, 
-#one coin type per line. The coin types are Dollars, Quarters, Dimes, Nickels, and Pennies. 
-#Use singular and plural coin names as appropriate, like 1 Penny vs. 2 Pennies.
+# 
+#
+#Uses singular and plural coin names as appropriate, like 1 Penny vs. 2 Pennies.
 coins = int(input())#make sure the input is a number
 if coins <=0:#this checks if the user is broke or in debt
     print('No change')
