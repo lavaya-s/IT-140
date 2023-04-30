@@ -1,6 +1,6 @@
 ####################################################################
 words = {}#create dictionaries to hold the keys to inputs
-numbers={}#create empty dict for nums
+numbers = {}#create empty dict for nums
 game = True#bool flag for the while loop
 count = 0#start counting iterations
 def UserText():#functiion to take user input into dictionaries
