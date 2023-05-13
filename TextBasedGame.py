@@ -314,7 +314,7 @@ def Solve():#this is only accessed from the puzzle room
     PlayerAction()
 def Move():
     global current_room
-    print(f'You are in {current_room}')
+    #print(f'You are in {current_room}') #this is only for testing
     print('\nCommands: [n]-north [e]-east [s]-south [w]-west\n')
     room=input('\tPlease enter a command:').title()#this will set title case
     if current_room == 'Entrance' and room[0] in rooms['Entrance']:#check room[0] and available options
@@ -380,7 +380,9 @@ def end():
     print()
     text('Thanks for playing! ')
     text(name)
-    sys.exit()
+    time.sleep(10)
+    while True:#attempting to close all calls on the stack
+        sys.exit()#exits the program
 while Game == True:
     Load()#load global assets
     intro()#introduction to the game
