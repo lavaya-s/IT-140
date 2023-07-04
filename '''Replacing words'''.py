@@ -1,4 +1,5 @@
 '''Replacing words'''
+#A scprit for replacing words in a sentence
 def replacing_words():#create a function to replace words in the sentence
     for replacement_word in new_dictionary:#iterate over the dictionary for replacements
         index_sentence=-1#set a count for indexing at -1 for accuracy
